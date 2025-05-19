@@ -1,0 +1,20 @@
+{
+  "name": "example-worker",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node .",
+    "build": "node ./build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "agnostic-worker": "../"
+  },
+  "devDependencies": {
+    "dotenv": "^16.5.0",
+    "esbuild": "^0.25.4"
+  }
+}

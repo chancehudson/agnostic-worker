@@ -1,0 +1,15 @@
+{
+  "name": "agnostic-worker",
+  "version": "0.0.0",
+  "description": "Scripts for building NodeJS web servers that can run as a WebWorker or a NodeJS process.",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-flare": "^1.4.27"
+  }
+}
