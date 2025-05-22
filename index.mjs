@@ -10,13 +10,10 @@ export default async (fn) => {
 
     app.use(url_middleware);
 
-    // await this in the fetch callback
-    const p = fn(app);
-
     return {
       async fetch(request, env, context) {
         try {
-          await p;
+          await fn(app, env);
           return await handleRequest({
             request,
             env,
@@ -40,7 +37,7 @@ export default async (fn) => {
     const app = express();
 
     app.use("*", url_middleware);
-    await fn(app);
+    await fn(app, process.env);
 
     // Start the server
     await new Promise((r) =>

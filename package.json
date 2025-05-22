@@ -1,6 +1,6 @@
 {
   "name": "agnostic-worker",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Scripts for building NodeJS web servers that can run as a WebWorker or a NodeJS process.",
   "main": "index.mjs",
   "scripts": {
